@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(./pic.jpg);
+    background-size: cover;
+}
+
+/* HIDE RADIOS */
+input[type="radio"] {
+    display: none;
+}
+
+/* NAVBAR */
+nav {
+    background: #002b5c;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav label {
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SECTIONS */
+section {
+    display: none;
+    padding: 80px 50px;
+    min-height: 100vh;
+}
+
+/* SHOW ACTIVE */
+#homeTab:checked ~ #home,
+#aboutTab:checked ~ #about,
+#webTab:checked ~ #web,
+#graphicsTab:checked ~ #graphics,
+#dataTab:checked ~ #data,
+#cyberTab:checked ~ #cyber,
+#eligibilityTab:checked ~ #eligibility,
+#scheduleTab:checked ~ #schedule,
+#registerTab:checked ~ #register {
+    display: block;
+}
+
+/* DEFAULT */
+#homeTab:checked ~ #home {
+    display: block;
+}
+
+/* CARD */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* FORM */
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+}
+
+button {
+    background: #002b5c;
+    color: white;
+    border: none;
+}

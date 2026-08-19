@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UICTO Student Data Capture</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+    border:2px solid black;
+    background:white;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    border-bottom:2px solid black;
+}
+
+.logo{
+    width:160px;
+    height:120px;
+    border-right:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.title{
+    flex:1;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.banner{
+    height:180px;
+    background:gray;
+}
+
+nav{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+.search{
+    text-align:right;
+    padding:15px;
+}
+
+.search input{
+    width:250px;
+    height:35px;
+}
+
+h2{
+    text-decoration:underline;
+    margin:20px;
+}
+
+form{
+    padding:20px;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    padding:10px;
+    vertical-align:top;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:8px;
+}
+
+.passport{
+    width:140px;
+    height:150px;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 30px;
+    font-size:16px;
+    margin:10px;
+}
+
+.project{
+    margin-top:30px;
+    border-collapse:collapse;
+}
+
+.project td{
+    border:2px solid black;
+    padding:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">
+UICTO<br>LOGO
+</div>
+
+<div class="title">
+EBONYI STATE UNIVERSITY OF ICT, SCIENCE AND TECHNOLOGY OFEREKPE
+</div>
+
+</header>
+
+<div class="banner">
+<!-- Banner Image -->
+</div>
+
+<nav>
+
+<a href="#">HOME</a>
+
+<a href="#">LMS</a>
+
+<a href="#">COURSE REGISTRATION</a>
+
+<a href="#">RETURNING STUDENT</a>
+
+<a href="#">NEW STUDENT</a>
+
+<a href="#">STAFFS</a>
+
+</nav>
+
+<div class="search">
+<label><b>SEARCH:</b></label><br>
+<input type="search">
+</div>
+
+<h2>STUDENT'S DATA CAPTURE</h2>
+
+<form>
+
+<table>
+
+<tr>
+
+<td width="40%">
+
+<label>SURNAME</label>
+<input type="text">
+
+<label>FIRST NAME</label>
+<input type="text">
+
+<label>OTHER NAMES</label>
+<input type="text">
+
+<label>EMAIL</label>
+<input type="email">
+
+<label>ADDRESS</label>
+<textarea></textarea>
+
+<label>FACULTY</label>
+<select>
+<option>Select Faculty</option>
+<option>Computing</option>
+<option>Engineering</option>
+<option>Science</option>
+</select>
+
+<label>DEPARTMENT</label>
+<select>
+<option>Select Department</option>
+<option>Software Engineering</option>
+<option>Computer Science</option>
+<option>Cyber Security</option>
+</select>
+
+<label>COURSE</label>
+<select>
+<option>Select Course</option>
+<option>B.Sc Software Engineering</option>
+<option>B.Sc Computer Science</option>
+</select>
+
+<label>STATE</label>
+<input type="text">
+
+<label>LGA</label>
+<input type="text">
+
+</td>
+
+<td width="60%">
+
+<label>PASSPORT</label>
+
+<div class="passport">
+INSERT YOUR<br>PASSPORT HERE
+</div>
+
+<br>
+
+<label>PASSWORD</label>
+<input type="password">
+
+<br><br>
+
+<label>SEX</label>
+
+<input type="radio" name="sex" style="width:auto;"> Male
+
+<input type="radio" name="sex" style="width:auto;"> Female
+
+<br><br>
+
+<label>MARITAL STATUS</label>
+
+<input type="checkbox" style="width:auto;"> Married
+
+<input type="checkbox" style="width:auto;"> Not Married
+
+<br><br>
+
+<label>DATE OF BIRTH</label>
+
+<input type="date">
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button type="submit">SUBMIT</button>
+
+<button type="reset">CLEAR</button>
+
+</div>
+
+</form>
+
+<table class="project">
+
+<tr>
+
+<td rowspan="5" width="40%">
+<h3>CAPSTONE PROJECT</h3>
+</td>
+
+<td rowspan="5" width="15%">
+<h3>CHOOSE ONE</h3>
+</td>
+
+<td>
+PORTFOLIO WEBSITE WITH ANIMATED INTERACTIONS
+</td>
+
+</tr>
+
+<tr>
+<td>PRODUCT PURCHASE / E-COMMERCE FRONT END (USING FAKESTORE API)</td>
+</tr>
+
+<tr>
+<td>WEATHER DASHBOARD APP (LIVE API DATA)</td>
+</tr>
+
+<tr>
+<td>RECIPE FINDER OR DISCOVERY APP (PUBLIC RECIPE API)</td>
+</tr>
+
+<tr>
+<td>BLOG OR NEWS READER APP (PUBLIC NEWS API)</td>
+</tr>
+
+</table>
+
+<footer>
+
+All right Reserved UICTO 2026
+
+</footer>
+
+</div>
+
+</body>
+</html>

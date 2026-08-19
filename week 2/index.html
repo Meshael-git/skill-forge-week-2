@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<title>SkillForge Semester 3</title>
+</head>
+
+<body>
+
+<!-- RADIO CONTROLS -->
+<input type="radio" name="tab" id="homeTab" checked>
+<input type="radio" name="tab" id="aboutTab">
+<input type="radio" name="tab" id="webTab">
+<input type="radio" name="tab" id="graphicsTab">
+<input type="radio" name="tab" id="dataTab">
+<input type="radio" name="tab" id="cyberTab">
+<input type="radio" name="tab" id="eligibilityTab">
+<input type="radio" name="tab" id="scheduleTab">
+<input type="radio" name="tab" id="registerTab">
+
+<!-- NAV -->
+<nav>
+    <label for="homeTab">Home</label>
+    <label for="aboutTab">About</label>
+
+    <span class="dropdown">
+        <label>Programs ▼</label>
+        <div class="dropdown-content">
+            <label for="webTab">Web Development</label>
+            <label for="graphicsTab">Graphics Design</label>
+            <label for="dataTab">Data Science</label>
+            <label for="cyberTab">Cybersecurity</label>
+        </div>
+    </span>
+
+    <label for="eligibilityTab">Eligibility</label>
+    <label for="scheduleTab">Schedule</label>
+    <label for="registerTab">Register</label>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h1>SkillForge Semester 3 Programme</h1>
+
+    <p>
+        The SkillForge Semester 3 Programme is a structured training initiative designed to equip
+        students with practical and industry-relevant digital skills.
+    </p>
+
+    <p>
+        This semester focuses on specialization, allowing participants to choose a program track
+        and gain hands-on experience through real-world projects and guided mentorship.
+    </p>
+
+    <div class="card">
+        <h3>Programme Highlights</h3>
+        <ul>
+            <li>Hands-on project-based learning</li>
+            <li>Industry-relevant skill development</li>
+            <li>Collaborative team environment</li>
+            <li>Portfolio building</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About the Programme</h2>
+
+    <p>
+        SkillForge bridges the gap between theoretical education and real-world application.
+        The programme is designed to help students develop practical skills that are highly
+        demanded in today's digital economy.
+    </p>
+
+    <p>
+        Participants will engage in structured sessions, workshops, and group projects,
+        all aimed at building competence and confidence.
+    </p>
+
+    <div class="card">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Interactive training sessions</li>
+            <li>Mentorship and guidance</li>
+            <li>Real-world project experience</li>
+            <li>Continuous assessment</li>
+        </ul>
+    </div>
+</section>
+
+<!-- WEB -->
+<section id="web">
+    <h2>Web Development Programme</h2>
+
+    <p>
+        This track focuses on building modern websites and web applications.
+    </p>
+
+    <ul>
+        <li>HTML, CSS, and responsive design</li>
+        <li>Introduction to JavaScript</li>
+        <li>Website structure and layout</li>
+        <li>Deployment basics</li>
+    </ul>
+</section>
+
+<!-- GRAPHICS -->
+<section id="graphics">
+    <h2>Graphics Design Programme</h2>
+
+    <p>
+        Develop creative skills in visual communication and digital design.
+    </p>
+
+    <ul>
+        <li>Design principles and color theory</li>
+        <li>Branding and logo design</li>
+        <li>Poster and digital graphics</li>
+    </ul>
+</section>
+
+<!-- DATA -->
+<section id="data">
+    <h2>Data Science Programme</h2>
+
+    <p>
+        Learn how to analyze, interpret, and visualize data effectively.
+    </p>
+
+    <ul>
+        <li>Data analysis fundamentals</li>
+        <li>Visualization techniques</li>
+        <li>Basic statistics</li>
+    </ul>
+</section>
+
+<!-- CYBER -->
+<section id="cyber">
+    <h2>Cybersecurity Programme</h2>
+
+    <p>
+        Understand how to protect systems and digital information from threats.
+    </p>
+
+    <ul>
+        <li>Network security basics</li>
+        <li>Threat detection</li>
+        <li>Online safety practices</li>
+    </ul>
+</section>
+
+<!-- ELIGIBILITY -->
+<section id="eligibility">
+    <h2>Eligibility Criteria</h2>
+    <ul>
+        <li>Registered student</li>
+        <li>Basic computer knowledge</li>
+        <li>Commitment to learning</li>
+    </ul>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+    <h2>Training Schedule</h2>
+
+    <table>
+        <tr><th>Day</th><th>Programme</th><th>Time</th></tr>
+        <tr><td>Monday</td><td>Web Development</td><td>10 AM</td></tr>
+        <tr><td>Wednesday</td><td>Graphics Design</td><td>12 PM</td></tr>
+        <tr><td>Friday</td><td>Cosmotology</td><td>2 PM</td></tr>
+    </table>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+    <h2>Register</h2>
+
+    <p>Fill in the form below to enroll:</p>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <select required>
+            <option value="">Select Programme</option>
+            <option>Web Development</option>
+            <option>Graphics Design</option>
+            <option>Data Science</option>
+            <option>Cybersecurity</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</body>
+</html>
